@@ -1,2 +1,1 @@
-# expensez
-# expensez
+# Sistema de cadastro de despesas, utilizando MEAN Stack

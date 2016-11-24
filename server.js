@@ -15,8 +15,14 @@ config.configure();
 mongoose.connect(process.env.MONGODB_CONNECTION);
 
 app.use(bodyParser.json());
+app.use('/app', express.static(__dirname + '/app'))
 
 // CONFIGURAÇÃO DAS ROTAS
+app.get('/', function(req, res){
+
+    res.sendFile(__dirname + '/index.html')
+})
+
 app.get('/api/entrada', function(req, res){
 
     entradaController.find(req.query, function(err, entradas){

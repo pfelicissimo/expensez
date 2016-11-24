@@ -1,0 +1,24 @@
+<html ng-app="app">
+
+    <head>
+        <title>#sigamMeOsDevs - Controle de despesas</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    </head>
+
+    <body>
+
+        <h1>Controle de despesas</h1>
+        <ul>
+            <li><a ui-sref="entradas">Entradas</a></li>
+        </ul>
+
+        <div ui-view></div>
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.1/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+
+        <script src="app/components/app.js"></script>
+        <script src="app/components/entrada/entrada-controller.js"></script>
+    </body>
+</html>
